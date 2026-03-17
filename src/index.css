@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --tracking-1: 0.05rem;
+}
+
+@layer utilities {
+  .slide-in-from-bottom {
+    animation-name: slideInFromBottom;
+  }
+  .duration-100 {
+    animation-duration: 100ms;
+  }
+  .duration-200 {
+    animation-duration: 200ms;
+  }
+  .duration-300 {
+    animation-duration: 300ms;
+  }
+  .duration-700 {
+    animation-duration: 700ms;
+  }
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  .buttom-hover:hover {
+    transform: scale(1.05);
+    background-color: green;
+    color: #fff;
+  }
+  .bottombounce {
+    animation: bottombounce1 1s infinite ease-in-out;
+  }
+
+  .smallhover {
+    display: inline-block;
+    transition: transform 0.3s ease-in;
+  }
+
+  .smallhover:hover {
+    transform: scale(1.1);
+  }
+  .bounceanimation{animation: bounce1 ease 3s infinite;}
+}
+@keyframes bottombounce1 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+
+@keyframes bounce1{
+  0%,100%{transform: scale(1);}
+  50%{transform: scale(1.05);}
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
