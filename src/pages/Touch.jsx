@@ -1,10 +1,10 @@
 import React from "react";
-import { Contact } from "./ServiceCard";
+import { Contact } from "../components/ServiceCard";
 import { StickyNote, CircleUser, Phone } from "lucide-react";
 
 function Touch() {
   return (
-    <div className="flex justify-center items-center mb-10">
+    <div className="flex justify-center items-center mb-10 ">
       <div className="w-[80vw] md:flex  space-x-5">
         <div className="flex flex-col  flex-1">
           <div className="space-y-5">

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Star, MoonStar } from "lucide-react";
-import ServiceCard, { FloatingCard } from "./ServiceCard";
+import ServiceCard, { FloatingCard } from "../components/ServiceCard";
 import AOS from "aos";
 import "aos/dist/aos.css"
 
@@ -11,7 +11,7 @@ function OurStory() {
   }, []);
 
   return (
-    <div className="flex justify-center mb-20 ">
+    <div className="flex justify-center mb-20">
       <div className="grid lg:grid-cols-2 w-[80vw]  sm:grid-cols-1 justify-items-between gap-x-20">
         <div className="bg-amber-600  rounded-2xl w-full h-100 flex justify-center items-center relative">
           <span className="text-8xl ">🏡</span>

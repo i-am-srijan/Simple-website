@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { SuccessStory } from "./ServiceCard";
+import { SuccessStory } from "../components/ServiceCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

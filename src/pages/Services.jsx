@@ -1,6 +1,6 @@
 import React from 'react'
 import { Minus } from 'lucide-react'
-import ServiceCard from './ServiceCard'
+import ServiceCard from '../components/ServiceCard'
 
 function Services() {
   return (

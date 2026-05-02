@@ -6,8 +6,8 @@ import MyVideo from "../assets/video/3129595-uhd_3840_2160_30fps.mp4";
 
 function Showcase() {
   return (
-    <div className=" flex justify-center">
-      <div className="w-[80vw]  flex mt-10  md:items-center ">
+    <div className=" flex justify-center" >
+      <div className="container  flex mt-2  md:items-center ">
         <div className="flex flex-col gap-4 md:items-start md:text-left text-center items-center">
           <h3 className="flex bounceanimation p-2 px-4 delay-100 duration-100 slide-in-from-bottom bg-amber-50 rounded-2xl backdrop-blur-2xl shadow-2xl border-1 border-amber-200">
             <Sparkle className=" " />

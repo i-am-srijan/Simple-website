@@ -12,7 +12,7 @@ const items = [
 
 export default function Marquee() {
   return (
-    <div className="overflow-hidden whitespace-nowrap bg-amber-100 py-2 mt-10 ">
+    <div className="overflow-hidden whitespace-nowrap bg-amber-100 py-2 m-20 ">
       <div className="marquee inline-block">
         {items.concat(items).map((item, index) => (
           <span
